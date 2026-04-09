@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods and Loops and switch statements using JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head><body>
+    <h1>Methods and Loops</h1>
+    <h2>Methods</h2>
+    <p>A method is a function that is associated with an object. In JavaScript, methods are defined as properties of an object that are functions. They can be used to perform actions on the object or to return information about the object.</p>
+    <h2>Loops</h2>
+    <p>A loop is a programming construct that allows you to repeat a block of code multiple times. In JavaScript, there are several types of loops, including for loops, while loops, and do-while loops. Loops are useful for iterating over arrays, performing repetitive tasks, and controlling the flow of a program.</p>
+    <h2>Switch Statements</h2>
+    <p>A switch statement is a control flow statement that allows you to execute different blocks of code based on the value of a variable. In JavaScript, the switch statement evaluates an expression and matches its value against several case labels. If a match is found, the corresponding block of code is executed.</p>
+    <script>
+        // Example of a method
+        const person = {
+            name: 'John',
+            greet: function() {
+                return `Hello, my name is ${this.name}`;
+            }
+        };
+        console.log(person.greet());
+
+        // Example of a for loop
+        for (let i = 0; i < 5; i++) {
+            console.log(i);
+        }
+
+        // Example of a switch statement
+        const day = 'Monday';
+        switch (day) {
+            case 'Monday':
+                console.log('Start of the week');
+                break;
+            case 'Friday':
+                console.log('End of the week');
+                break;
+            default:
+                console.log('Midweek');
+        }
+    </script>
+</body>
+
+</html>
